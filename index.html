@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | KCS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <!-- <img src="background.png" id="kcs"> -->
+        <div class="container">
+            <nav>
+                <a href="" id="logoUrl"><h2 class="logo">KCS</h2></a>
+                <!-- <img class="logo" src="background.png" alt=""> -->
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-p">
+                <p><i class="fa-solid fa-code"></i> Full Stack Developer</p>
+                <h1>Hey, I'm <span>KCSquid,</span><br>a Canadaian Dev</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about1">
+                    <img src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZGV8ZW58MHx8MHx8fDA%3D">
+                </div>
+                <div class="about2">
+                    <h1 class="subtitle">About Me</h1>
+                        <p>Hey! I'm Squid 🦑.<br>
+                            I <b>actively</b> code in ~ Go 💙, C++, Java ☕, Javascript/Node &amp; Python 🐍.<br>
+                            I <b>can</b> code [decently or I'm learning] ~ C/C# &amp; Rust ⚙️.<br>
+                            And <b>of course</b>, HTML/CSS...<br><br>
+
+                            I also do some engineering (Raspberry Pi 🥧 / Arduino)</p>
+                    <div class="titles">
+                        <div class="links" onclick="switchTab('skills')">Skill</div>
+                        <div class="links" onclick="switchTab('experience')">Experience</div>
+                    </div>
+
+                    <div class="contents activeTab" id="skills">
+                        <ul>
+                            <li><span>Front End</span><br>Website/Webapp Design & Creation</li>
+                            <li><span>Games/Apps</span><br>Experienced in Video Game Creation (some Android Studio as well)</li>
+                            <li><span>Backend</span><br>C/C++, Java, Go and many other languages that allow me to create both sides of apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Now</span><br>Active Volunteering and Leading teams (MCC)</li>
+                            <li><span>2022-2024</span><br>Tutoring both children & adults (Python)</li>
+                            <li><span>Late 2021 - Mid 2023</span><br>Leading coding classes for over 5 different elementary/middle schools in my area</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtite">Projects</h1>
+            <div class="projectsList">
+                <div class="project">
+                    <i class="fa-solid fa-language"></i>
+                    <h1 class="projectTitle">Z--</h1>
+                    <p>Z--, the Gen Z slang language. Coded in C++ and later compiled to assembly</p>
+                    <a href="https://github.com/KCSquid/Z--">Visit Repo</a>
+                </div>
+
+                <div class="project">
+                    <i class="fa-solid fa-staff-snake"></i>
+                    <h1 class="projectTitle">Snake Game</h1>
+                    <p>The very popularized, snake game (made in Python with Pygame)</p>
+                    <a href="https://github.com/KCSquid/Snake">Visit Repo</a>
+                </div>
+
+                <div class="project">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h1 class="projectTitle">Unbeatable TicTacToe</h1>
+                    <p>Unbeatable TicTacToe game using the minimax algorithm</p>
+                    <a href="https://github.com/KCSquid/tictactoe">Visit Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactLeft">
+                    <h1 class="subtitle">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> kcs@kcsquid.xyz</p>
+                    <p><i class="fa-solid fa-phone"></i> (289) 654 5080</p>
+                    <div class="socials">
+                        <a href="https://github.com/KCSquid/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/kcsquid/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/KCSquid_"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@kcsquid.0"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="contactRight">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="name" placeholder="Name for Contact" required>
+                        <input type="email" name="Email" id="email" placeholder="Where I should respond (Email)" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="What's up? (Message)" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © KCSquid (2024-2025) | Thanks for visiting! <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</html>
