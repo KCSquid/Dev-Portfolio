@@ -9,15 +9,18 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <div id="gradient"></div>
+    <a href="#aboutme" id="scroll1"><i class="fa-solid fa-chevron-down"></i></a>
     <div id="header">
         <!-- <img src="background.png" id="kcs"> -->
         <div class="container">
+            <div class="navbg"></div>
             <nav>
                 <a href="" id="logoUrl"><h2 class="logo">KCS</h2></a>
                 <!-- <img class="logo" src="background.png" alt=""> -->
                 <ul>
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -25,25 +28,27 @@
 
             <div class="header-p">
                 <p><i class="fa-solid fa-code"></i> Full Stack Developer</p>
-                <h1>Hey, I'm <span>KCSquid,</span><br>a Canadaian Dev</h1>
+                <h1><span id="greet">Hey</span>, I'm <span id="name" onmouseover="changeName(this)">KCSquid!</span></h1>
+                <h3>Welcome ~ Dev Portfolio</h3>
             </div>
         </div>
     </div>
 
     <div id="about">
         <div class="container">
-            <div class="row">
+            <div class="row" id="aboutme">
                 <div class="about1">
                     <img src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZGV8ZW58MHx8MHx8fDA%3D">
                 </div>
                 <div class="about2">
                     <h1 class="subtitle">About Me</h1>
-                        <p>Hey! I'm Squid 🦑.<br>
-                            I <b>actively</b> code in ~ Go 💙, C++, Java ☕, Javascript/Node &amp; Python 🐍.<br>
-                            I <b>can</b> code [decently or I'm learning] ~ C/C# &amp; Rust ⚙️.<br>
-                            And <b>of course</b>, HTML/CSS...<br><br>
+                    Hey! I'm Jahvon Cockburn (Aka. KCSquid 🦑).<br><br>
 
-                            I also do some engineering (Raspberry Pi 🥧 / Arduino)</p>
+                    <strong>Proficient</strong> <li>Python 🐍,</li><li>Javascript/Node,</li><li>Java ☕,</li><li>Go 💙.</li><br>
+                    <strong>Decent</strong> with ~ <li>C++,</li><li>HTML/CSS.</li><br>
+                    <strong>Learning</strong> ~ <li>C,</li><li>C#,</li><li> Rust ⚙️.</li><br><br>
+
+                    I also do some engineering (Raspberry Pi 🥧 / Arduino)
                     <div class="titles">
                         <div class="links" onclick="switchTab('skills')">Skill</div>
                         <div class="links" onclick="switchTab('experience')">Experience</div>
@@ -52,14 +57,14 @@
                     <div class="contents activeTab" id="skills">
                         <ul>
                             <li><span>Front End</span><br>Website/Webapp Design & Creation</li>
-                            <li><span>Games/Apps</span><br>Experienced in Video Game Creation (some Android Studio as well)</li>
-                            <li><span>Backend</span><br>C/C++, Java, Go and many other languages that allow me to create both sides of apps</li>
+                            <li><span>Games/Apps</span><br>Experienced in Video Game Creation<br>(with partial Android Studio experience)</li>
+                            <li><span>Backend</span><br>C/C++, Java, Go and many other languages for fullstack design</li>
                         </ul>
                     </div>
 
                     <div class="contents" id="experience">
                         <ul>
-                            <li><span>2023 - Now</span><br>Active Volunteering and Leading teams (MCC)</li>
+                            <li><span>2023 - Now</span><br>Active Volunteering and Team Leadership (<a href="https://www.mississaugachessclub.ca/committee/#youth-volunteers" target="_blank">MCC</a>)</li>
                             <li><span>2022-2024</span><br>Tutoring both children & adults (Python)</li>
                             <li><span>Late 2021 - Mid 2023</span><br>Leading coding classes for over 5 different elementary/middle schools in my area</li>
                         </ul>
@@ -77,21 +82,21 @@
                     <i class="fa-solid fa-language"></i>
                     <h1 class="projectTitle">Z--</h1>
                     <p>Z--, the Gen Z slang language. Coded in C++ and later compiled to assembly</p>
-                    <a href="https://github.com/KCSquid/Z--">Visit Repo</a>
+                    <a href="https://github.com/KCSquid/Z--" target="_blank">Visit Repo</a>
                 </div>
 
                 <div class="project">
                     <i class="fa-solid fa-staff-snake"></i>
                     <h1 class="projectTitle">Snake Game</h1>
                     <p>The very popularized, snake game (made in Python with Pygame)</p>
-                    <a href="https://github.com/KCSquid/Snake">Visit Repo</a>
+                    <a href="https://github.com/KCSquid/Snake" target="_blank">Visit Repo</a>
                 </div>
 
                 <div class="project">
                     <i class="fa-solid fa-hashtag"></i>
                     <h1 class="projectTitle">Unbeatable TicTacToe</h1>
                     <p>Unbeatable TicTacToe game using the minimax algorithm</p>
-                    <a href="https://github.com/KCSquid/tictactoe">Visit Repo</a>
+                    <a href="https://github.com/KCSquid/tictactoe" target="_blank">Visit Repo</a>
                 </div>
             </div>
         </div>
@@ -105,10 +110,10 @@
                     <p><i class="fa-solid fa-paper-plane"></i> kcs@kcsquid.xyz</p>
                     <p><i class="fa-solid fa-phone"></i> (289) 654 5080</p>
                     <div class="socials">
-                        <a href="https://github.com/KCSquid/"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/kcsquid/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://x.com/KCSquid_"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.tiktok.com/@kcsquid.0"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://github.com/KCSquid/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/kcsquid/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/KCSquid_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@kcsquid.0" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
 
@@ -126,7 +131,7 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright © KCSquid (2024-2025) | Thanks for visiting! <i class="fa-solid fa-heart"></i></p>
+            <p>Copyright © KCSquid (2024-2025) ­  | ­  Thanks for visiting! ­  <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
 </html>
