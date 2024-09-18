@@ -36,6 +36,7 @@ html {
 }
 
 nav {
+  width: 100%;
   position: fixed;
   display: flex;
   align-items: center;
@@ -45,6 +46,8 @@ nav {
 
 #logoUrl {
   text-decoration: none;
+  position: relative;
+  margin-left: 10vw;
 }
 
 .logo {
@@ -64,11 +67,13 @@ nav {
 
 nav {
   z-index: 100;
+  position: absolute;
+  right: 0;
 }
 
 nav ul {
   position: relative;
-  left: 40vw;
+  margin-right: 10vw;
 }
 
 nav ul li {
@@ -82,10 +87,25 @@ nav ul li a {
   color: #4F7CAC;
   background-clip: text;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   position: relative;
   font-weight: 600;
   transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul li a {
+    font-size: 1.5vw;
+  }
+}
+
+nav ul li a i {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav ul li a:hover {

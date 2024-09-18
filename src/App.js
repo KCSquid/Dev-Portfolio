@@ -85,10 +85,10 @@ function App() {
             <a href="" id="logoUrl"><h2 class="logo">KCS</h2></a>
             {/* <img class="logo" src="background.png" alt=""> */}
             <ul>
-              <li><a href="#header">Home</a></li>
-              <li><a href="#aboutme">About Me</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#header"><i class="fa-solid fa-house"></i><br></br>Home</a></li>
+              <li><a href="#aboutme"><i class="fa-solid fa-address-card"></i><br></br>About Me</a></li>
+              <li><a href="#projects"><i class="fa-solid fa-code"></i><br></br>Projects</a></li>
+              <li><a href="#contact"><i class="fa-solid fa-phone"></i><br></br>Contact</a></li>
             </ul>
           </nav>
 
