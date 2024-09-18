@@ -164,6 +164,27 @@ function App() {
               <p>Unbeatable TicTacToe game using the minimax algorithm</p>
               <a href="https://github.com/KCSquid/tictactoe" target="_blank">Visit Repo</a>
             </div>
+
+            <div class="project">
+              <i class="fa-solid fa-list"></i>
+              <h1 class="projectTitle">ToDo List</h1>
+              <p>Simple todo list app using React JS & Tailwind</p>
+              <a href="https://github.com/KCSquid/todo-list" target="_blank">Visit Repo</a>
+            </div>
+
+            <div class="project">
+              <i class="fa-solid fa-face-dizzy"></i>
+              <h1 class="projectTitle">Hangman</h1>
+              <p>Normal Hangman, but you're actually learning new words. (Python, Terminal Based)</p>
+              <a href="https://github.com/KCSquid/hangman" target="_blank">Visit Repo</a>
+            </div>
+
+            <div class="project">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h1 class="projectTitle">Glassmorphism Portfolio</h1>
+              <p>Check out a cool CSS spin on my portfolio! <a href="/projects/glassmorphism/index.html" target="_blank"><span className="pretty-light">Link</span></a></p>
+              <a href="https://github.com/KCSquid/glassmorphism-portfolio" target="_blank">Visit Repo</a>
+            </div>
           </div>
         </div>
       </div>
@@ -181,6 +202,7 @@ function App() {
                   <a href="https://www.instagram.com/kcsquid/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                   <a href="https://x.com/KCSquid_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                   <a href="https://www.tiktok.com/@kcsquid.0" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="https://stackoverflow.com/users/14709272/kingcodesquid" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
                 </div>
               </div>
             </div>

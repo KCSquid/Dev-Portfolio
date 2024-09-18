@@ -248,12 +248,18 @@ nav ul li a:hover::after {
   display: block;
 }
 
+.project {
+  flex-basis: 28%;
+  flex-grow: 1;
+}
+
 .projects {
   padding: 1vw 0;
 }
 
 .projectsList {
   display: flex;
+  flex-wrap: wrap;
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   margin-top: 2vw;
 }
@@ -283,12 +289,13 @@ nav ul li a:hover::after {
 }
 
 .projectsList div i {
-  font-size: 10vw;
+  font-size: 7vw;
+  padding: 1vw;
   transition: ease-in-out 0.4s;
 }
 
 .projectsList div:hover>i {
-  font-size: 7vw;
+  font-size: 5vw;
 }
 
 .projectsList div:hover {
@@ -535,4 +542,12 @@ form textarea {
   width: 100vw;
   height: 19vh;
   background: linear-gradient(#2c3353, transparent)
+}
+
+.pretty-dark {
+  color: #4F7CAC;
+}
+
+.pretty-light {
+  color: #9EEFE5;
 }

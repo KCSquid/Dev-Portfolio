@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    transform: translateX(-2%);
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(circle-scatter-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: scroll;
+}
+
+.piece {
+    margin-top: 3.5vh;
+    min-height: 90vh;
+    height: fit-content;
+    position: absolute;
+    top: 0%;
+    transform: translateX(-50%);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding: 1vh 2vw 1vh 2vw;
+}
+
+.piece h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.3vh;
+}
+
+h2 {
+    font-size: 2.6vh;
+}
+
+h3 {
+    font-size: 2vh;
+}
+
+.piece p {
+    font-weight: 550;
+    font-size: 2vh;
+}
+
+.center {
+    left: 50%;
+    width: 30vw;
+}
+
+.left {
+    left: 16.5vw;
+    width: 25vw;
+}
+
+.right {
+    left: 83.5vw;
+    width: 25vw;
+}
+
+.section {
+    margin-bottom: 2.5vh;
+    width: 90%;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(184, 184, 184, 0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: #f5c7f7 solid 2px;
+    padding: 2% 5% 2% 5%;
+    transition: 0.2s ease-in-out;
+}
+
+.section:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset, -10px -10px 10px rgba(255, 255, 255, 0.08) inset;
+}
+
+
+/* .border {
+    width: 104%;
+    height: 107%;
+    background: linear-gradient(to bottom, red, blue);
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+} */
+
+.glass {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50px;
+    /* background-color: rgba(255, 255, 255, 0.027); */
+    background-color: rgba(74, 27, 117, 0.253);
+    backdrop-filter: blur(8px);
+    z-index: -100;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
+    /* border: 1px solid #f5c7f7; */
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+    transition: 0.4s ease-in-out;
+}
+
+.glass:hover, .section:hover ~ .glass {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px rgba(255, 255, 255, 0.08);
+}
+
+.pretty {
+    color: #f5c7f7;
+}
+
+.pretty-alt {
+    color: #d0d8ff;
+}
+
+.special {
+    background: linear-gradient(to bottom, #f5c7f7, rgb(112, 112, 235));
+    background-clip: text;
+    color: transparent;
+}
+
+.brand {
+    display: inline-block;
+    margin: 2%;
+    width: max-content;
+    transition: 0.4s ease-in-out;
+}
+
+.brand:hover {
+    transform: translateY(-20%) scale(115%);
+    text-shadow: 0px 3px 15px #f5c7f7;
+}
+
+.brandurls {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f5c7f7;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e6cce7;
+}
+
+::selection {
+    background-color: #27296d;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        overflow-y: scroll;
+    }
+
+    .center, .left, .right {
+        left: 50%;
+        width: 90%;
+        position: relative;
+    }
+
+    .center {
+        margin-top: 2.5vh;
+        margin-bottom: 4vh;
+    }
+
+    .left, .right {
+        margin-bottom: 2.5vh;
+    }
+
+    #intro {
+        height: 10vh;
+    }
+}
